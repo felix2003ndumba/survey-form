@@ -1,21 +1,38 @@
-.body {
-    background-image: url("https://www.cumanagement.com/sites/default/files/2019-07/business-leader-talent.jpg");
-    position: sticky;
-    top: 0;
-    max-width: 100vw;
-    max-height: 100vh;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-  }
+body {
+  background-image: url("https://www.cumanagement.com/sites/default/files/2019-07/business-leader-talent.jpg");
+  position: sticky;
   
-  .form {
-    position: relative;
-    background-color: gray;
-    align-self: center;
-    width: 40vw;
-    height: auto;
-    margin-top: 10vh;
-    text-align: center;
-  }
-  
+}
+
+.container {
+  width:100vw;
+  text-align: center;
+}
+
+
+
+.container2 {
+  background-color: rgb(149, 142, 142);
+  width: 45vw;
+  text-align: start;
+  margin-left: 25vw;
+
+}
+
+/* .form {
+  position: relative;
+  background-color: gray;
+  align-self: center;
+  width: 40vw;
+  height: auto;
+  margin-top: 10vh;
+  text-align: center;
+} */
+
+
+
+h2, h5 {
+  text-align: center;
+  line-height: 1px;
+  font-weight: lighter;
+}
