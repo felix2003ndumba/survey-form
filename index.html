@@ -1,26 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <title >Fork Me! FCC: Test Suite Template</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
+  
+    <main id="main">
+    
+      <div class="body" id="img-div">
+        <img
+          id="image"
+          src="https://cdn.dribbble.com/users/1859102/screenshots/6024037/survey_templates_dribbble-11_4x.png"
+        >
+
+        <div class="main-container">
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div class="container">
+      <h1 id="title">Designtech Survey Form</h1>
+      <p id="description">
+        Thankyou for taking the time in puting your valuable feedback and
+        helping us improve our service
+      </p>
+    </div>
+    <div class="container2">
+      <form class="form" id="survey-form">
+        <label id="name-label" class="headers">Name</label>
+        <br>
+        <br>
+        <input
+          id="name"
+          type="text"
+          placeholder="Enter Your Name Here"
+          class="input-fields"
+          required
+        />
+        <br>
+        <br>
+        <label class="headers" id="number-label">Age (optional)</label>
+        <br><br>
+        <input
+          type="number"
+          id="number"
+          min="18"
+          max="99"
+          placeholder="Age"
+          class="input-fields"
+          required
+        />
+        <br><br>
 
-    <!--
+        <label id="email-label" class="headers">Email</label>
+        <br><br>
+        <input
+          id="email"
+          type="email"
+          pattern=".+gmail\.com"
+          placeholder="Enter your email address"
+          class="input-fields"
+          required
+        />
+        
+        <p class="headers">what option best describes your current role?</p>
+        <select  class="input-fields" id="dropdown" name="role" required>
+          <option value="" disabled selected>Select current role</option>
+          <option value="student">Student</option>
+          <option value="professional">Full time learner</option>
+          <option value="other">Full time job</option>
+          <option value="other">Prefer not to say</option>
+          <option value="other">Others</option>
+        </select>
 
-    Hello Camper!
+        <p class="headers">
+          Would you recomment DesignTech to a friend or collegue?
+        </p>
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
+        <input
+          type="radio"
+          id="recommend-definitely"
+          name="recommend"
+          value="definitely"
+          required
+          class="radio"
+        />
+        <label for="recommend-definitely">Definitely</label>
+        <br />
+        <input
+          type="radio"
+          id="recommend-probably"
+          name="recommend"
+          value="probably"
+          required
+          class="radio"
+        />
+        <label for="recommend-probably">Maybe</label>
+        <br />
 
-    - The freeCodeCamp Team
+        <input
+          type="radio"
+          id="recommend-not-sure"
+          name="recommend"
+          value="not-sure"
+          required
+          class="radio"
+        />
+        <label for="recommend-not-sure">Not Sure</label>
 
-    -->
-    <script  src="js/index.js"></script>
+        <p class="headers">
+          What is it you like the best about DesignTech?</span>
+        </p>
+        <input type="checkbox" class="radio" value="Creativity">
+        <label>Creativity</label>
+        <br>
+        <input type="checkbox" class="radio" value="Quality">
+        <label>Quality</label>  
+        <br>
+
+         <input type="checkbox" class="radio" value="Insightful Content">
+          <label>Insightful Content</label>
+          <br>
+
+           <input type="checkbox" class="radio" value="Quality Code">
+        <label>Quality Code</label>
+        <br>
+
+           <input type="checkbox" class="radio" value="Support">
+        <label>Support</label>  
+        <br>
+
+         <input type="checkbox" class="radio" value="Faster Delivery">
+        <label>Faster Delivery</label> 
+        <br>
+
+          <input type="checkbox" class="radio" value="Expected Results">
+        <label>Expected Results</label>  
+
+        
+        <h3>Any comments of suggestions you might have for us?</h3>
+        <textarea>
+
+        </textarea>
+        <br>
+        <button class="button" id="submit">
+          Submit
+        </button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </form>
+    </div>
+
+    <script src="js/index.js"></script>
+  </div>
+</div>
+  </main>
   </body>
 </html>
